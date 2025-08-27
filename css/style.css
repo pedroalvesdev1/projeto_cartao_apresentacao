@@ -8,7 +8,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/fundo.png) no-repeat;
     
 
     main {
@@ -88,7 +87,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 
     body {
         min-width: 200px;
