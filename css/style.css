@@ -95,6 +95,7 @@ body {
 
         main {
             & .card {
+                box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.3);
                 & .card-info {
                     gap: 15px;
 
