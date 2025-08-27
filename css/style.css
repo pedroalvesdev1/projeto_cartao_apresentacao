@@ -4,10 +4,10 @@ body {
     font-family: "DM Serif Text", serif;
     background: #f5f5f5;
     min-width: 100vh;
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
 
     main {
         width: 100%;
@@ -78,16 +78,37 @@ body {
 
             .card:hover {
                 transform: translateY(-10px);
-                /* Move o card 10px para cima */
                 box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
             }
         }
     }
 }
 
-@media (max-width:400px) {
+@media (max-width: 480px) {
 
-    .card {
-        width: 90%;
+    body {
+        min-width: 200px;
+
+        main {
+            & .card {
+                & .card-info {
+                    gap: 15px;
+
+                    h2 {
+                        padding: 0px;
+                        margin: 0px;
+                    }
+
+                    p {
+                        margin: 0px;
+                    }
+
+                    .card-social {
+                        margin: 10px 0px 20px 0px;
+                    }
+                }
+            }
+        }
     }
+
 }
